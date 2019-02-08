@@ -1,4 +1,5 @@
 #!/bin/bash
+
 declare -a apps=("vim"
 		 "git"
 		 "zsh")
@@ -16,6 +17,9 @@ done
 git config --global user.email "shadowcarson@gmail.com"
 git config --global user.name "Grantopher Carson"
 git config --global core.editor "vim"
+
+# OH-MY-ZSH
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # Setup NVM
 if hash nvm;
